@@ -1,16 +1,40 @@
-# EX-7 IMPLEMENTATION OF TRACEROUTE COMMAND
+# IMPLEMENTATION OF TRACEROUTE COMMAND
 
-DATE :
+# EXP: 7
 
-AIM :
+# DATE:19-04-2023
 
-ALGORITHM :
-
-
-PROGRAM :
+# AIM :
+## To write the python program for simulating Traceroute command
 
 
-OUTPUT :
+# ALGORITHM :
+## 1. Start the program.
+## 2. Get the frame size from the user.
+## 3. To create the frame based on the user request.
+## 4. To send frames to server from the client side.
+## 5. If your frames reach the server, it will send ACK signal to client
+otherwise it will sendNACK signal to client.
+## 6. Stop the program
+
+# PROGRAM :
+```PYTHON 3 
+
+from scapy.all import *
+
+target = ["www.google.com"]
+result, unans = traceroute(target, maxttl=32)
+print(result, unans)
 
 
-RESULT :
+```
+
+
+
+# OUTPUT :
+![image](https://github.com/hearttoucher123/EX-7/assets/122000959/5b29a75c-3938-468a-8368-b5f1bccc8dfb)
+
+
+
+# RESULT :
+## Thus, the python program for simulating Traceroute command was successfully executed.
